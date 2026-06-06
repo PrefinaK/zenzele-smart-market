@@ -12,4 +12,9 @@ node_modules/
 vendor/
 .env
 node_modules/
-uploads/
+uploads/*.jpeg
+uploads/*.jpg
+uploads/*.png
+uploads/*.webp
+uploads/audio/
+.
