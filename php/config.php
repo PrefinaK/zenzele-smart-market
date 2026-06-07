@@ -1,12 +1,13 @@
 <?php
 // ===== ZENZELE SMART MARKET — CONFIG =====
 
-// Database settings — these are correct for XAMPP default installation
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'zenzele_db');
-define('DB_USER', 'root');
-define('DB_PASS', '');           // XAMPP default = empty password
-define('DB_PORT', 3306);
+// Database settings 
+define('DB_HOST', 'sql309.byethost11.com');
+define('DB_NAME', 'b11_42123937_zenzele');
+define('DB_USER', 'b11_42123937');
+define('DB_PASS', 'prefina@123pk');
+define('APP_URL', 'http://zenzele-prefina.byethost11.com');
+
 
 define('JWT_SECRET', 'zenzele_jwt_secret_change_this_on_live_server_2026');
 define('APP_URL',    'http://localhost/zenzele-smart-market');
