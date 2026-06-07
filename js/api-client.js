@@ -7,7 +7,13 @@
 // This points to your XAMPP server.
 // For local XAMPP:  http://localhost/zenzele-smart-market/php/api.php
 // For live hosting: https://yourdomain.com/php/api.php
-const API_BASE = 'http://localhost/zenzele-smart-market/php/api.php';
+const API_BASE = (function() {
+    const host = window.location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1') {
+        return 'http://localhost/zenzele-smart-market/php/api.php';
+    }
+    return 'http://zenzele-prefina.byethost11.com/php/api.php';
+})();
 
 // ── Token helpers ─────────────────────────────────────────────────────────
 function getToken()  { return localStorage.getItem('zenzele_token'); }
